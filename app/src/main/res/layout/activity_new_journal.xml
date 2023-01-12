@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover"
+    tools:context=".newjournal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolb"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/journtitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCCCFF"
+            android:hint="Title"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/journDetail"
+        android:layout_width="300dp"
+        android:layout_height="114dp"
+        android:layout_below="@+id/toolb"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/box"
+
+        android:gravity="top|left"
+        android:hint="Enter here"
+        android:padding="15dp"
+        android:textSize="15dp"></EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_baseline_save_24"
+        android:backgroundTint="#C4C4C4"
+        app:maxImageSize="56dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+</RelativeLayout>
